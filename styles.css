@@ -1,0 +1,144 @@
+body {
+  background-color: hsl(210, 46%, 95%);
+  padding: 7% 7%;
+  font-size: 13px;
+}
+
+body * {
+  margin: 0;
+}
+
+img {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  margin-right: 10px;
+}
+
+/* Grid  */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2%;
+  row-gap: 2%;
+}
+
+/* Cards */
+
+.card {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.card h1 {
+  color: #fff;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  margin: 30px 0;
+}
+
+.card p {
+  color: hsl(0, 0%, 81%);
+  line-height: 1.5;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2%;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+
+  color: hsl(0, 0%, 81%);
+}
+
+.card-header p {
+  opacity: 0.5;
+}
+
+.one {
+  background-color: hsl(263, 55%, 52%);
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.two {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.three h1 {
+  color: hsl(217, 19%, 35%);
+}
+
+.three p {
+  color: hsl(217, 19%, 35%);
+  opacity: 0.7;
+}
+
+.four {
+  background-color: hsl(219, 29%, 14%);
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.five {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.five p {
+  color: hsl(217, 19%, 35%);
+  opacity: 0.7;
+}
+
+.five h1 {
+  color: hsl(217, 19%, 35%);
+}
+
+.attribution {
+  margin-top: 50px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .one {
+    grid-column: 1/2;
+  }
+
+  .two {
+    grid-column: 1/2;
+  }
+
+  .three {
+    grid-column: 1/2;
+  }
+
+  .four {
+    grid-column: 1/2;
+  }
+
+  .five {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+
+  .attribution {
+    margin-top: 200px;
+  }
+}
